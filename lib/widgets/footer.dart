@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import '../app_colors.dart';
 
+typedef TabSelectionCallback = void Function(int);
+
 class FooterWidget extends StatefulWidget {
-  const FooterWidget({super.key});
+  final TabSelectionCallback onTabSelected;
+
+  const FooterWidget({super.key, required this.onTabSelected});
 
   @override
   _FooterWidgetState createState() => _FooterWidgetState();
@@ -15,6 +19,7 @@ class _FooterWidgetState extends State<FooterWidget> {
     setState(() {
       _selectedIndex = index;
     });
+    widget.onTabSelected(index);
   }
 
   @override

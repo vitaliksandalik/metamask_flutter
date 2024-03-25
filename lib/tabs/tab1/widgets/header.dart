@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../app_colors.dart';
-import '../models/network.dart';
+import '../../../app_colors.dart';
+import '../../../models/network.dart';
 
 class HeaderWidget extends StatefulWidget {
   const HeaderWidget({super.key});

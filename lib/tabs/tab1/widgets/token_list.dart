@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import '../models/token.dart';
+import '../../../models/token.dart';
 
 class TokenListWidget extends StatefulWidget {
   const TokenListWidget({super.key});
@@ -69,7 +69,7 @@ class _TokenListWidgetState extends State<TokenListWidget> {
                     ),
                     title: Text(
                       token.name,
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     subtitle: Text('${token.amount} ${token.symbol}'),
                     trailing: Text(

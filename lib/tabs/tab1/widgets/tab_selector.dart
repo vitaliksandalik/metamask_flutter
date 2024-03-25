@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import './nft_tab.dart';
-import './balance_info.dart';
-import './token_list.dart';
-import '../app_colors.dart';
+import 'nft_tab.dart';
+import 'balance_info.dart';
+import 'token_list.dart';
+import '../../../app_colors.dart';
 
 class TabSelector extends StatefulWidget {
   const TabSelector({Key? key}) : super(key: key);

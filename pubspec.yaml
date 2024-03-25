@@ -28,6 +28,7 @@ flutter:
 
   assets:
     - assets/tokens.json
+    - assets/transactions.json
     - assets/logos/metamask-1.png
     - assets/logos/eth-1.png
     - assets/logos/bnb-1.png

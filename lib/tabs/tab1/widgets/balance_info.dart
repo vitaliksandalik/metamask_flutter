@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import '../app_colors.dart';
+import '../../../app_colors.dart';
 import 'dart:convert';
-import '../models/token.dart';
+import '../../../models/token.dart';
 
 class BalanceInfoWidget extends StatefulWidget {
   const BalanceInfoWidget({super.key});

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../app_colors.dart';
+import '../../../app_colors.dart';
 
 class AccountDetailsWidget extends StatelessWidget {
   const AccountDetailsWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    const String address = '0xAA21...42eA';
+    const String address = '0xAA21...42eA'; // hardcoded for now
 
     void _showWalletSelection(BuildContext context) {
       showModalBottomSheet(
@@ -33,7 +33,7 @@ class AccountDetailsWidget extends StatelessWidget {
                   leading: const Icon(Icons.account_balance_wallet),
                   title: const Text('Account 1'),
                   onTap: () {
-                    // Update state to reflect the selected wallet
+                    // ...
                     Navigator.pop(context);
                   },
                 ),
@@ -41,7 +41,7 @@ class AccountDetailsWidget extends StatelessWidget {
                   leading: const Icon(Icons.account_balance_wallet),
                   title: const Text('Account 2'),
                   onTap: () {
-                    // Update state to reflect the selected wallet
+                    // ...
                     Navigator.pop(context);
                   },
                 ),
@@ -55,7 +55,7 @@ class AccountDetailsWidget extends StatelessWidget {
                     ),
                     child: InkWell(
                       onTap: () {
-                        // Implement adding new account or hardware wallet
+                        // ...
                       },
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 15),
