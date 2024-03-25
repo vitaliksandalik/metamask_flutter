@@ -1,0 +1,34 @@
+name: metamask_flutter
+description: 'A new Flutter project.'
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^9.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: false
+
+  assets:
+    - assets/tokens.json
+    - assets/logos/metamask-1.png
+    - assets/logos/eth-1.png
+    - assets/logos/bnb-1.png
+    - assets/logos/magnum.png
